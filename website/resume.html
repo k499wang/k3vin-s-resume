@@ -1,109 +1,183 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kevin Wang's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            padding: 0;
+            color: #2C3E50;
+            padding: 5px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 2px;
+
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            border-bottom: 2px solid #2C3E50;
+            padding-bottom: 5px;
+        }
+
+        .experience,
+        .projects,
+        .education {
+            margin-top: 20px;
+        }
+
+        .list-item {
+            margin: 10px 0;
+        }
+
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
+
+        <!-- Header -->
         <div class="header">
             <h1>Kevin Wang</h1>
-            <h2>UW CS Co-op Student</h2>
-            <h2>Distinct Views: <span id="views"></span> </h2>
-        </div>
-        <div class="contact">
-            <a href="mailto:k3vinwvng@gmail.com">k3vinwvng@gmail.com</a>
-            <a href="https://www.linkedin.com/in/kevin-wang-558a6a329/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/k499wang" target="_blank">GitHub</a>
+            <p>647-239-6547 | <a href="mailto:k3vinwvng@gmail.com">k3vinwvng@gmail.com</a> | 
+               <a href="https://www.linkedin.com/in/kevin-wang-558a6a329/">linkedin.com/in/kevin-wang</a> | 
+               <a href="https://github.com/k499wang">github.com/k499wang</a>
+               <p>Distinct Views: <span id="views"></span></p>
+            </p>
         </div>
 
-        <div class="section">
-            <h3>Projects</h3>    
-
-            <div class="project">
-                <div class="project-title">
-                    <a href="https://github.com/k499wang/Talker" target="_blank">MERN Stack Chat Application</a>
-                </div>
-                <div class="project-period">2024</div>
-                <ul>
-                    <li>Built a full-stack web application using MongoDB, Express.js, React, and Node.js.</li>
-                    <li>Implemented express APIs and connected the back-end to a NoSQL database.</li>
-                    <li>Implemented WebSockets for real-time communication</li>
-                    <li>Deployed the website to render.com with CI/CD pipelines with Github Actions. </li>
-                </ul>
+        <!-- Education Section -->
+        <div class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="list-item">
+                <strong>University of Waterloo</strong>, Waterloo, ON
+                <br>
+                <em>Bachelor of Mathematics in Computer Science, 4.0 GPA</em> | Sep. 2024 -- May 2029
             </div>
+            <div class="list-item">
+                <strong>Victoria Park Collegiate Institute</strong>, Toronto, ON
+                <br>
+                <em>International Baccalaureate Diploma, OSSD Honours</em> | Sep. 2020 -- June 2024
+            </div>
+        </div>
 
-            <div class="project">
-                <div class="project-title">
-                    <a href="https://github.com/k499wang/PyGen" target="_blank">Python PDF Generator using Gemini and OpenAI</a>
-                </div>
-                <div class="project-period">2024</div>
+        <!-- Experience Section -->
+        <div class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="list-item">
+                <strong>Coding Club Executive Member</strong>, Victoria Park Collegiate Institute, Toronto, ON | Oct. 2022 -- Jun. 2024
                 <ul>
-                    <li>Developed a Python tool that fetches random Wikipedia pages and rewrites them into PDFs using OpenAI’s API and wikipedia API.</li>
-                    <li>Designed the script to output the processed data into formatted PDFs.</li>
-                    <li>Used to automatically generate documents to get free trials for CourseHero and StuDocu</li>
+                    <li>Collaborated with team members to design and develop a landing page using HTML to attract new Coding Club members.</li>
+                    <li>Taught and explored foundational data structures and algorithms with Coding Club students to enhance their understanding of core programming concepts.</li>
                 </ul>
             </div>
         </div>
-        
-        <div class="project">
-            <div class="project-title">
-                <a href="https://k3vinwvng.com" target="_blank">Personal Blog and Resume using Terraform, Ansible and AWS</a>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="list-item">
+                <strong>Instant Messaging Platform</strong> | Sep. 2024 -- Present
+                <p>Technologies: ReactJS, MongoDB, ExpressJS, PostMan</p>
+                <ul>
+                    <li>Designed and implemented a full-stack messaging platform using the MERN stack, showcasing knowledge of modern web development.</li>
+                    <li>Ensured reliable API functionality through structured testing with Postman.</li>
+                    <li>Implemented real-time messaging with websockets that store conversations in a NoSQL database.</li>
+                    <li>Engineered secure authentication workflows with JSON Web Tokens (JWT) and bcrypt encryption to protect user data.</li>
+                    <li>Successfully deployed to Render for public access: <a href="https://talker-qz49.onrender.com">talker-qz49.onrender.com</a></li>
+                </ul>
             </div>
-            <div class="project-period">2024</div>
+            <div class="list-item">
+                <strong>Custom Antivirus</strong> | Aug. 2024 -- Present
+                <p>Technologies: Python, C++, Windows OS Concepts</p>
+                <ul>
+                    <li>Developed a lightweight antivirus tool to identify malicious strings using data structures and algorithms, including tries and sliding windows.</li>
+                    <li>Implemented DLL injection and API hooking via WinAPI to demonstrate basic dynamic malware detection capabilities.</li>
+                    <li>Simulated various malware samples for robust testing, identifying strengths and limitations in detection techniques.</li>
+                    <li>Explored foundational concepts in malware analysis and cybersecurity, applying practical knowledge of Windows system internals.</li>
+                </ul>
+            </div>
+            <div class="list-item">
+                <strong>The Cloud Resume Challenge</strong> | Sep. 2024 -- Present
+                <p>Technologies: AWS, Terraform</p>
+                <ul>
+                    <li>Completed a comprehensive cloud and DevOps challenge, building a serverless, full-stack resume site hosted on AWS.</li>
+                    <li>Demonstrated practical skills in infrastructure-as-code with Terraform for resource provisioning and management.</li>
+                    <li>Automated the deployment process using GitHub Actions, ensuring consistent and efficient updates directly from the repository.</li>
+                    <li>Live project: <a href="https://k3-vin-wvng-resume.works">k3-vin-wvng-resume.works</a></li>
+                </ul>
+            </div>
+            <div class="list-item">
+                <strong>SimpleC2</strong> | Oct. 2024 -- Present
+                <p>Technologies: Python, C++, ExpressJS, MongoDB, WinAPI</p>
+                <ul>
+                    <li>Built a Command-and-Control (C2) server to manage remote implants, enabling centralized task management and communication.</li>
+                    <li>Developed an API to facilitate task distribution and status tracking for multiple controlled agents.</li>
+                    <li>Leveraged asynchronous programming techniques to optimize the handling of simultaneous operations.</li>
+                    <li>Experimented with low-level Windows API functionalities to perform reconnaissance and simulate real-world scenarios.</li>
+                    <li>Gained hands-on experience in network security concepts, contributing to a deeper understanding of adversarial techniques.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="skills">
+            <h2 class="section-title">Technical Skills</h2>
             <ul>
-                <li>Built a blog page with automated infrastructure setup and deployment using Terraform and Ansible.</li>
-                <li>Configured CI/CD pipelines with GitHub Actions for automated updates.</li>
-                <li>Developed experienced with AWS such as: setting secure IAM policies, dynamoDB, Lambda functions etc.</li>
-                <li>Learned how to create secure S3 Buckets creating appropriate ACLs and Cloudfront for web filtering</li>
+                <li><strong>Languages:</strong> Python, C/C++, JavaScript, HTML/CSS, DrRacket</li>
+                <li><strong>Frameworks:</strong> React, Flask, ExpressJS</li>
+                <li><strong>Developer Tools:</strong> Git, VS Code, Visual Studio</li>
             </ul>
         </div>
 
-        <div class="project">
-            <div class="project-title">
-                <a href="https://github.com/k499wang/SimpleC2" target="_blank">SimpleC2</a>
-            </div>
-            <div class="project-period">2024</div>
-            <ul>
-                <li>Developed a fully functional Command and Control server using Python, MongoDB and Express for backend</li>
-                <li>Built implant code using c++ using WinAPI, CURL and asynchronous programming to keep track of tasks.</li>
-                <li>Used Sockets for real time communication between Backend and Frontend</li>
-                <li>Manipulated low-level windows structures to perform recon techniques</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>Education</h3>
-            <div class="education">
-                <div class="degree">Bachelor of Computer Science (In Progress)</div>
-                <div class="edu-period">2022 - Present</div>
-                <div>University of Waterloo</div>
-            </div>
-            <div class="education">
-                <div class="degree">International Baccalaureate (IB) - Computer Science HL</div>
-                <div class="edu-period">2020 - 2024</div>
-                <div>Victoria Park Collegiate Institute</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h3>Skills</h3>
-            <ul>
-                <li>Programming Languages: Java, JavaScript, Python</li>
-                <li>Web Development: React, Node.js, MongoDB, Express.js</li>
-                <li>Tools: Git, Terraform, Ansible, AWS</li>
-            </ul>
-        </div>
-
-        <script src="src/views.js"></script>
-
-
-        <footer>
-            © 2024 Kevin Wang
-        </footer>
     </div>
+
+    <script src="src/views.js"></script>
 </body>
+
 </html>

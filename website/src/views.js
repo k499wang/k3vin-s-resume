@@ -6,6 +6,7 @@ async function updateViews(){
         const response  = await fetch('https://rx66qfogtl4ulyhicxbsjzn72i0imqgz.lambda-url.us-east-1.on.aws/');
         const data = await response.json();
         document.getElementById('views').innerHTML = data;
+        console.log(data);
 
     }  catch (error){
         console.log(error);
