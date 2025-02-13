@@ -3,84 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
+    <title>Kevin Wang - Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #343a40;
+            line-height: 1.6;
+            margin: 20px;
         }
         h1 {
+            font-size: 2.5em;
             text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #000;
         }
         .section {
             margin-bottom: 20px;
         }
-        .section-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            border-bottom: 2px solid #343a40;
-            padding-bottom: 5px;
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section ul li {
             margin-bottom: 10px;
         }
-        .project {
-            margin-bottom: 15px;
+        .section ul li strong {
+            font-weight: bold;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .section ul li em {
+            font-style: italic;
         }
-        li {
-            margin-bottom: 5px;
+        .section ul li a {
+            text-decoration: none;
+            color: #0000EE;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Your Name</h1>
-        <p>Email: your.email@example.com | LinkedIn: linkedin.com/in/yourname | GitHub: github.com/yourname</p>
-        
-        <div class="section">
-            <div class="section-title">Education</div>
-            <p><strong>University of Waterloo</strong> - Bachelor of Computer Science (Expected 202X)</p>
-        </div>
 
-        <div class="section">
-            <div class="section-title">Projects</div>
-            <div class="project">
-                <strong>Phish Detector</strong> (Feb 2025 - Present)
-                <ul>
-                    <li>Developed a machine learning pipeline to detect phishing websites with Flask backend and React frontend.</li>
-                    <li>Integrated feature extraction and trained a classifier to identify malicious URLs.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <strong>Instant Messaging Platform</strong> (Sep 2024 - Present)
-                <ul>
-                    <li>Designed and implemented a MERN-stack messaging app with WebSocket-based real-time updates.</li>
-                    <li>Implemented user authentication, media sharing, and message persistence using MongoDB.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <strong>SimpleC2</strong> (Nov 2024 - Present)
-                <ul>
-                    <li>Built a C2 framework to manage remote implants and execute commands securely.</li>
-                    <li>Implemented encryption for secure communication between C2 server and clients.</li>
-                </ul>
-            </div>
-        </div>
+    <h1>Kevin Wang</h1>
+    <div class="contact-info">
+        <p>647-239-6547 | <a href="mailto:k3vinwvng@gmail.com">k3vinwvng@gmail.com</a> | 
+        <a href="https://www.linkedin.com/in/kevin-wang-558a6a329/">linkedin.com/in/kevin-wang</a> | 
+        <a href="https://github.com/k499wang">github.com/k499wang</a></p>
     </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>
+                <strong>Programming Languages</strong>: Python, C/C++, Javascript, HTML/CSS<br>
+                <strong>Cloud & DevOps</strong>: AWS, Docker, DigitalOcean, Render, Ansible, Terraform, GitHub Workflows<br>
+                <strong>Frameworks & Libraries</strong>: ReactJS, Flask, PyTorch, Mongoose, NextJS, WinAPI, Pandas, NumPY, Scikit-learn<br>
+                <strong>Tools</strong>: Git, VS Code, Visual Studio, R Studio, Excel, Word, Powerpoint
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <strong>Coding Club Executive Member</strong> - Victoria Park Collegiate Institute, Toronto, ON<br>
+                <em>Oct. 2022 -- Jun. 2024</em><br>
+                <ul>
+                    <li>Collaborated with team members to design and develop a landing page using HTML to attract new Coding Club members, effectively <strong>boosting member count by 30%</strong>.</li>
+                    <li><strong>Taught</strong> and explored foundational data structures and algorithms with Coding Club students to enhance their understanding of core programming concepts.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Phish Detector</strong> | <em>Python, Docker, ReactJS, Machine Learning Concepts</em><br>
+                <em>Nov. 2024 -- Present</em><br>
+                <ul>
+                    <li>Developed a machine learning model using <strong>Logistic Regression</strong> in Google Colab to classify URLs as phishing or legitimate with <strong>92% accuracy on 10,000+ URLs</strong>.</li>
+                    <li>Automated critical feature extraction from websites using Beautiful Soup for model training and evaluation.</li>
+                    <li>Containerized the application with <strong>Docker</strong> to ensure portability and consistent deployment.</li>
+                    <li>Deployed successfully on Render for public access through: <a href="https://phish-detector-1.onrender.com/">phish-detector-1.onrender.com/</a>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Instant Messaging Platform</strong> | <em>ReactJS, MongoDB, ExpressJS, Postman</em><br>
+                <em>Sep. 2024 -- Present</em><br>
+                <ul>
+                    <li>Designed and implemented a full-stack messaging platform using the <strong>MERN stack</strong>.</li>
+                    <li>Conducted <strong>API testing</strong> with Postman to ensure <strong>99.9%+ runtime</strong> and proper endpoint behavior.</li>
+                    <li>Integrated <strong>real-time messaging</strong> using WebSockets, with messages stored securely in a NoSQL database.</li>
+                    <li>Implemented user authentication with <strong>JSON Web Tokens (JWT)</strong> and bcrypt encryption, enhancing data security.</li>
+                    <li>Deployed successfully on Render for public access through: <a href="https://talker-qz49.onrender.com/">talker-qz49.onrender.com</a>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>SimpleC2</strong> | <em>Python, C++, ExpressJS, MongoDB, WinAPI</em><br>
+                <em>Oct. 2024 -- Present</em><br>
+                <ul>
+                    <li>Engineered a <strong>Command-and-Control (C2) server</strong> to manage and control <strong>10,000+ remote implants</strong> (remote systems), enabling centralized task management and communication.</li>
+                    <li>Developed an <strong>API</strong> to facilitate secure communication between the C2 server and remote implants, allowing task distribution and status updates in <strong>real-time</strong>.</li>
+                    <li>Utilized WinAPI and low-level Windows structures to execute reconnaissance techniques while maintaining a <strong>0% detection rate</strong> against antiviruses.</li>
+                    <li>Utilized <strong>asynchronous programming techniques</strong> to optimize handling of multiple tasks.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>The Cloud Resume Challenge</strong> | <em>AWS, Terraform</em><br>
+                <em>Sep. 2024 -- Present</em><br>
+                <ul>
+                    <li>Completed a <strong>serverless, full-stack</strong> resume site hosted on <strong>AWS</strong>, showcasing proficiency in cloud technologies.</li>
+                    <li>Automated resource provisioning and management using <strong>infrastructure-as-code</strong> practices with Terraform, effectively reducing deployment time by over <strong>90%</strong> compared to manual resource provisioning.</li>
+                    <li>Configured a NoSQL database, DynamoDB, handling <strong>80+ unique view counts per month</strong> by parsing custom HTTP headers.</li>
+                    <li>Live site accessible at: <a href="https://k3-vin-wvng-resume.works">k3-vin-wvng-resume.works</a>.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>University of Waterloo</strong> - Waterloo, ON<br>
+                <em>Bachelor's of Computer Science, President’s Scholarship of Distinction</em><br>
+                Sep. 2024 -- May 2029
+            </li>
+            <li>
+                <strong>Victoria Park Collegiate Institute</strong> - Toronto, ON<br>
+                <em>International Baccalaureate Diploma, OSSD Honours</em><br>
+                Sep. 2020 -- June 2024
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
